@@ -13,35 +13,10 @@ class ItemInfoBundle: NSObject
 {
     override init() {
         
-        var latitude: Double{
-            get {
-                latitude = 41.8262
-                return latitude
-            }
-            set(newValue) {
-                latitude = newValue
-            }
-        }
-        var longitude: Double{
-            get {
-                longitude = -71.4032
-                return longitude
-            }
-            set(newValue) {
-                longitude = newValue
-            }
-        }
-
+    var latitude: Double = 41.8262
+    var longitude: Double = -71.4032
     var description = [String]()
-        var who: String! {
-            get {
-                who = nil
-                return who!
-            }
-            set(newValue) {
-                who = newValue
-            }
-        }
+    var who: String! = "eli_motycka@brown.edu"
     let timeStamp = NSDateFormatter.localizedStringFromDate(NSDate(), dateStyle: .MediumStyle, timeStyle: .ShortStyle)
     }
 }

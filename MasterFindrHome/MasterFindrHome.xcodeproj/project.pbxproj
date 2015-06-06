@@ -13,7 +13,6 @@
 		06A19E781B22590400C76D32 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06A19E771B22590400C76D32 /* Images.xcassets */; };
 		06A19E7B1B22590400C76D32 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06A19E791B22590400C76D32 /* LaunchScreen.xib */; };
 		06A19E871B22590400C76D32 /* MasterFindrHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A19E861B22590400C76D32 /* MasterFindrHomeTests.swift */; };
-		06BFC9631B227E1C00021BEC /* Screen Shot 2015-06-04 at 6.05.32 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 06BFC9621B227E1C00021BEC /* Screen Shot 2015-06-04 at 6.05.32 PM.png */; };
 		06BFC9691B22866A00021BEC /* GoogleMapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BFC9681B22866A00021BEC /* GoogleMapsViewController.swift */; };
 		85090627CD06E6ADB3B2AA1D /* libPods-MasterFindrHome.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC64BBFC139BB6389AA0B717 /* libPods-MasterFindrHome.a */; };
 /* End PBXBuildFile section */
@@ -39,7 +38,6 @@
 		06A19E801B22590400C76D32 /* MasterFindrHomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MasterFindrHomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06A19E851B22590400C76D32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06A19E861B22590400C76D32 /* MasterFindrHomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterFindrHomeTests.swift; sourceTree = "<group>"; };
-		06BFC9621B227E1C00021BEC /* Screen Shot 2015-06-04 at 6.05.32 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screen Shot 2015-06-04 at 6.05.32 PM.png"; path = "../../../../../Screen Shot 2015-06-04 at 6.05.32 PM.png"; sourceTree = "<group>"; };
 		06BFC9681B22866A00021BEC /* GoogleMapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleMapsViewController.swift; sourceTree = "<group>"; };
 		0C2C2DB8323E5D61911F5A28 /* Pods-MasterFindrHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasterFindrHome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MasterFindrHome/Pods-MasterFindrHome.debug.xcconfig"; sourceTree = "<group>"; };
 		169352D1CDA583CFEA9B38A9 /* Pods-MasterFindrHome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasterFindrHome.release.xcconfig"; path = "Pods/Target Support Files/Pods-MasterFindrHome/Pods-MasterFindrHome.release.xcconfig"; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				06A19E701B22590400C76D32 /* AppDelegate.swift */,
-				06BFC9621B227E1C00021BEC /* Screen Shot 2015-06-04 at 6.05.32 PM.png */,
 				06A19E791B22590400C76D32 /* LaunchScreen.xib */,
 				06A19E771B22590400C76D32 /* Images.xcassets */,
 				06A19E6F1B22590400C76D32 /* Info.plist */,
@@ -227,7 +224,6 @@
 				06A19E761B22590400C76D32 /* Main.storyboard in Resources */,
 				06A19E7B1B22590400C76D32 /* LaunchScreen.xib in Resources */,
 				06A19E781B22590400C76D32 /* Images.xcassets in Resources */,
-				06BFC9631B227E1C00021BEC /* Screen Shot 2015-06-04 at 6.05.32 PM.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

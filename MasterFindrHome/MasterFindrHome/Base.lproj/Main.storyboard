@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MasterFindrHome" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,6 +16,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2015-06-04 at 6.05.32 PM.png" translatesAutoresizingMaskIntoConstraints="NO" id="60d-we-QCC">
+                                <rect key="frame" x="-6" y="8" width="606" height="592"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3u9-nK-2g0">
+                                <rect key="frame" x="81" y="187" width="432" height="176"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ehu-rU-hoU">
+                                    <rect key="frame" x="0.0" y="0.0" width="432" height="176"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="findr." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mzs-bc-aDC">
                                 <rect key="frame" x="159" y="187" width="283" height="85"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
@@ -39,11 +50,41 @@
                         </subviews>
                         <color key="backgroundColor" red="0.80581202649999994" green="0.80581202649999994" blue="0.80581202649999994" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="KB3-Fz-Hit"/>
+                    <navigationItem key="navigationItem" title="Home" id="KB3-Fz-Hit"/>
+                    <connections>
+                        <segue destination="hTj-03-cp2" kind="presentation" identifier="goto_login" id="HGW-fO-pWU"/>
+                        <segue destination="wNN-69-A5A" kind="presentation" identifier="goto_map" id="Mpx-c2-hqL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1012" y="346"/>
+            <point key="canvasLocation" x="1304" y="354"/>
+        </scene>
+        <!--Google Maps View Controller-->
+        <scene sceneID="EYU-zp-CCA">
+            <objects>
+                <viewController id="wNN-69-A5A" customClass="GoogleMapsViewController" customModule="MasterFindrHome" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1cz-bU-jyE"/>
+                        <viewControllerLayoutGuide type="bottom" id="owm-GE-oDN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XDN-Kj-pa6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="0gd-0w-HZj">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="0gd-0w-HZj" id="ij8-IS-KWy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tz9-xk-Zhn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2048" y="346"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Ehc-gn-BMC">
@@ -90,6 +131,9 @@
                                     <color key="titleColor" red="0.44947697837686068" green="0.34379211832341594" blue="0.92007970328282829" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="8PY-GP-H4l" kind="presentation" identifier="goto_signup" id="ccI-7h-yXy"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PASSWORD" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZaM-p6-l4n">
                                 <rect key="frame" x="175" y="332" width="250" height="30"/>
@@ -102,7 +146,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eUr-aq-7dY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="569" y="1010"/>
+            <point key="canvasLocation" x="664" y="1348"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="PBC-0h-ebP">
@@ -164,7 +208,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zSc-LE-Uoe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1218" y="1010"/>
+            <point key="canvasLocation" x="1339" y="1348"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mnl-HC-Ojl">
@@ -185,4 +229,7 @@
             <point key="canvasLocation" x="330" y="346"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Screen Shot 2015-06-04 at 6.05.32 PM.png" width="463" height="449"/>
+    </resources>
 </document>

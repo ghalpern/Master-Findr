@@ -24,6 +24,7 @@ class GoogleMapsViewController: UIViewController {
         demoMarker.snippet = "I lost my Canada Goose jacket! :("
         demoMarker.appearAnimation = kGMSMarkerAnimationPop
         demoMarker.map = mapView
+        
         self.view = mapView
         
         // Do any additional setup after loading the view, typically from a nib.
@@ -31,7 +32,13 @@ class GoogleMapsViewController: UIViewController {
     }
     
     
-    
+    @IBAction func addPin(sender: UILongPressGestureRecognizer) {
+        
+        if sender.state == UIGestureRecognizerState.Began {
+            let coordinate = mapView.convertPoint(sender.locationInView(mapView), toCoordinateFromView: mapView)
+            
+        }
+    }
     
     
 }

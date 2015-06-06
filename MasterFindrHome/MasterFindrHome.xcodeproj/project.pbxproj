@@ -88,11 +88,10 @@
 		06A19E6D1B22590400C76D32 /* MasterFindrHome */ = {
 			isa = PBXGroup;
 			children = (
-				06A19E701B22590400C76D32 /* AppDelegate.swift */,
 				06A19E721B22590400C76D32 /* ViewController.swift */,
+				06BFC9681B22866A00021BEC /* GoogleMapsViewController.swift */,
 				06A19E741B22590400C76D32 /* Main.storyboard */,
 				06A19E6E1B22590400C76D32 /* Supporting Files */,
-				06BFC9681B22866A00021BEC /* GoogleMapsViewController.swift */,
 			);
 			path = MasterFindrHome;
 			sourceTree = "<group>";
@@ -100,6 +99,7 @@
 		06A19E6E1B22590400C76D32 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				06A19E701B22590400C76D32 /* AppDelegate.swift */,
 				06BFC9621B227E1C00021BEC /* Screen Shot 2015-06-04 at 6.05.32 PM.png */,
 				06A19E791B22590400C76D32 /* LaunchScreen.xib */,
 				06A19E771B22590400C76D32 /* Images.xcassets */,

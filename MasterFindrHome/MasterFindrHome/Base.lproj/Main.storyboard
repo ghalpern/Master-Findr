@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cIe-rk-e4c">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cIe-rk-e4c">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--Home-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MasterFindrHome" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="MasterFindrHome" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,49 +16,91 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2015-06-04 at 6.05.32 PM.png" translatesAutoresizingMaskIntoConstraints="NO" id="60d-we-QCC">
-                                <rect key="frame" x="-6" y="8" width="606" height="592"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2015-06-04 at 6.05.32 PM" translatesAutoresizingMaskIntoConstraints="NO" id="7gQ-uy-EQU">
+                                <rect key="frame" x="-5" y="-13" width="609" height="626"/>
                             </imageView>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3u9-nK-2g0">
-                                <rect key="frame" x="81" y="187" width="432" height="176"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ehu-rU-hoU">
-                                    <rect key="frame" x="0.0" y="0.0" width="432" height="176"/>
+                            <button opaque="NO" alpha="0.64999999999999969" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Km-uO-uY5">
+                                <rect key="frame" x="261" y="538" width="78" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GsK-CY-8RV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.5499999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tyd-zd-M9c">
+                                <rect key="frame" x="178" y="328" width="242" height="93"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="i found something.">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" alpha="0.5499999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jeY-6e-ZzQ">
+                                <rect key="frame" x="179" y="227" width="242" height="93"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="i lost something.">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" alpha="0.5499999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Lv-xS-cVa">
+                                <rect key="frame" x="178" y="429" width="242" height="93"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="my lost-n-found.">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QhS-Cg-uaM">
+                                <rect key="frame" x="104" y="72" width="391" height="144"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.69999999999999973" contentMode="center" id="ukB-wO-goH">
+                                    <rect key="frame" x="0.0" y="0.0" width="391" height="144"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="findr." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mzs-bc-aDC">
+                                            <rect key="frame" x="54" y="-2" width="283" height="85"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <size key="shadowOffset" width="4" height="3"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="lost n found, revamped." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYF-n4-SkV">
+                                            <rect key="frame" x="104" y="77" width="182" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="designed by Brown students, for Brown students." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXW-RU-IfH">
+                                            <rect key="frame" x="8" y="102" width="380" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </view>
-                                <blurEffect style="light"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <blurEffect style="dark"/>
                             </visualEffectView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="findr." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mzs-bc-aDC">
-                                <rect key="frame" x="159" y="187" width="283" height="85"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                <color key="textColor" red="0.45094764069999999" green="0.34413630449999999" blue="0.91966540399999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
-                                <size key="shadowOffset" width="3" height="2"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="lost n found, revamped." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYF-n4-SkV">
-                                <rect key="frame" x="209" y="264" width="182" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="designed by Brown students, for Brown students." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXW-RU-IfH">
-                                <rect key="frame" x="110" y="289" width="380" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.80581202649999994" green="0.80581202649999994" blue="0.80581202649999994" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="KB3-Fz-Hit"/>
+                    <navigationItem key="navigationItem" id="KB3-Fz-Hit">
+                        <barButtonItem key="backBarButtonItem" title="back" id="qjy-hj-er2"/>
+                    </navigationItem>
                     <connections>
-                        <segue destination="hTj-03-cp2" kind="presentation" identifier="goto_login" id="HGW-fO-pWU"/>
+                        <outlet property="homeView" destination="8bC-Xf-vdC" id="n9L-5V-VXT"/>
                         <segue destination="wNN-69-A5A" kind="presentation" identifier="goto_map" id="Mpx-c2-hqL"/>
+                        <segue destination="hTj-03-cp2" kind="presentation" identifier="goto_login" id="8e2-bc-AOP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1304" y="354"/>
+            <point key="canvasLocation" x="686" y="1045"/>
         </scene>
         <!--Google Maps View Controller-->
         <scene sceneID="EYU-zp-CCA">
@@ -93,12 +135,16 @@
                     </connections>
                 </pongPressGestureRecognizer>
             </objects>
+<<<<<<< HEAD
+            <point key="canvasLocation" x="1394" y="310"/>
+=======
             <point key="canvasLocation" x="2112" y="316"/>
+>>>>>>> 1749f123a5f14dc88c234b895fdda6e0b4c5c93f
         </scene>
-        <!--View Controller-->
+        <!--LoginVC-->
         <scene sceneID="Ehc-gn-BMC">
             <objects>
-                <viewController id="hTj-03-cp2" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginScreen" id="hTj-03-cp2" customClass="LoginVC" customModule="MasterFindrHome" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6ET-ds-Erw"/>
                         <viewControllerLayoutGuide type="bottom" id="p6h-JL-oDg"/>
@@ -107,117 +153,69 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login to findr." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbQ-z4-2S1">
-                                <rect key="frame" x="153" y="156" width="294" height="61"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <color key="textColor" red="0.45094764069999999" green="0.34413630449999999" blue="0.91966540399999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="highlightedColor" red="0.45094764069999999" green="0.34413630449999999" blue="0.91966540399999996" alpha="1" colorSpace="calibratedRGB"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1QS-LB-ZTW">
-                                <rect key="frame" x="11" y="225" width="579" height="41"/>
-                                <string key="text">If you already have an account,
- login using your Brown email and password</string>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2015-06-04 at 6.05.32 PM" translatesAutoresizingMaskIntoConstraints="NO" id="nM9-ji-BjJ">
+                                <rect key="frame" x="-4" y="-26" width="609" height="626"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please enter your Brown email and a password to create an account." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1QS-LB-ZTW">
+                                <rect key="frame" x="5" y="225" width="579" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="BROWN EMAIL" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="45b-SW-mo4">
-                                <rect key="frame" x="175" y="289" width="250" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAb-TP-w1U">
-                                <rect key="frame" x="265" y="376" width="70" height="30"/>
+                                <rect key="frame" x="265" y="350" width="70" height="30"/>
                                 <color key="backgroundColor" red="0.45094764069999999" green="0.34413630449999999" blue="0.91966540399999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bch-XS-I5T">
-                                <rect key="frame" x="172" y="414" width="257" height="30"/>
-                                <state key="normal" title="Don't have an account? Sign up now!">
-                                    <color key="titleColor" red="0.44947697837686068" green="0.34379211832341594" blue="0.92007970328282829" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="8PY-GP-H4l" kind="presentation" identifier="goto_signup" id="ccI-7h-yXy"/>
+                                    <action selector="loginTapped:" destination="hTj-03-cp2" eventType="touchUpInside" id="dfX-fx-ViX"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PASSWORD" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZaM-p6-l4n">
-                                <rect key="frame" x="175" y="332" width="250" height="30"/>
+                                <rect key="frame" x="175" y="312" width="250" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                        </subviews>
-                        <color key="backgroundColor" red="0.80581202649999994" green="0.80581202649999994" blue="0.80581202649999994" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eUr-aq-7dY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="664" y="1348"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="PBC-0h-ebP">
-            <objects>
-                <viewController id="8PY-GP-H4l" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="3fp-d7-t4m"/>
-                        <viewControllerLayoutGuide type="bottom" id="NEN-5a-0yG"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ts7-pe-YbV">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Signup for findr." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ww-n1-Vbu">
-                                <rect key="frame" x="153" y="147" width="294" height="61"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <color key="textColor" red="0.45094764069999999" green="0.34413630449999999" blue="0.91966540399999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="highlightedColor" red="0.45094764069999999" green="0.34413630449999999" blue="0.91966540399999996" alpha="1" colorSpace="calibratedRGB"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Use your Brown email to create an account." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DxH-YI-LnO">
-                                <rect key="frame" x="11" y="216" width="579" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bEt-eM-dIx">
+                                <rect key="frame" x="279" y="471" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="BROWN EMAIL" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="itM-NQ-Xho">
-                                <rect key="frame" x="175" y="265" width="250" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbQ-z4-2S1">
+                                <rect key="frame" x="136" y="156" width="329" height="94"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Login to findr.">
+                                        <attributes>
+                                            <color key="NSColor" red="0.45094764069999999" green="0.34413630449999999" blue="0.91966540399999996" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="40" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" red="0.45094764069999999" green="0.34413630449999999" blue="0.91966540399999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="BROWN EMAIL" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="45b-SW-mo4">
+                                <rect key="frame" x="175" y="272" width="250" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PASSWORD" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="urn-MT-bgF">
-                                <rect key="frame" x="175" y="303" width="250" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3P-GD-yk9">
-                                <rect key="frame" x="265" y="388" width="70" height="30"/>
-                                <color key="backgroundColor" red="0.45094764069999999" green="0.34413630449999999" blue="0.91966540399999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Login">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmW-6r-TAf">
-                                <rect key="frame" x="172" y="421" width="257" height="30"/>
-                                <state key="normal" title="Already have an account? Login now!">
-                                    <color key="titleColor" red="0.4494769784" green="0.3437921183" blue="0.9200797033" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CONFIRM PASSWORD" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yYt-me-s5B">
-                                <rect key="frame" x="175" y="341" width="250" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.80581202649999994" green="0.80581202649999994" blue="0.80581202649999994" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="createInfoLabel" destination="1QS-LB-ZTW" id="BJp-zt-N0F"/>
+                        <outlet property="loginButton" destination="PAb-TP-w1U" id="Q9s-AS-7g7"/>
+                        <outlet property="passwordTextField" destination="ZaM-p6-l4n" id="9pW-Ox-Fp6"/>
+                        <outlet property="usernameTextField" destination="45b-SW-mo4" id="mjF-4f-Y7e"/>
+                        <segue destination="7tf-0o-XnG" kind="unwind" identifier="dismissLogin" unwindAction="unwindSegueToHome:" id="Tsh-7F-Jmg"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zSc-LE-Uoe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eUr-aq-7dY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="7tf-0o-XnG" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1339" y="1348"/>
+            <point key="canvasLocation" x="1418" y="1605"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mnl-HC-Ojl">
@@ -239,6 +237,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Screen Shot 2015-06-04 at 6.05.32 PM.png" width="463" height="449"/>
+        <image name="Screen Shot 2015-06-04 at 6.05.32 PM" width="463" height="449"/>
     </resources>
 </document>

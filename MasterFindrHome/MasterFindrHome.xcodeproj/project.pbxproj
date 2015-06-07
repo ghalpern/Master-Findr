@@ -17,6 +17,7 @@
 		06EF166E1B2360D400826B23 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EF166D1B2360D400826B23 /* LoginVC.swift */; };
 		06EF16771B2363BA00826B23 /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 06EF16761B2363BA00826B23 /* KeychainWrapper.m */; };
 		85090627CD06E6ADB3B2AA1D /* libPods-MasterFindrHome.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC64BBFC139BB6389AA0B717 /* libPods-MasterFindrHome.a */; };
+		9904CBDC1B239CEC006B916E /* ItemInfoBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9904CBDB1B239CEC006B916E /* ItemInfoBundle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		06EF16781B23651900826B23 /* MasterFindrHome-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MasterFindrHome-Bridging-Header.h"; sourceTree = "<group>"; };
 		0C2C2DB8323E5D61911F5A28 /* Pods-MasterFindrHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasterFindrHome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MasterFindrHome/Pods-MasterFindrHome.debug.xcconfig"; sourceTree = "<group>"; };
 		169352D1CDA583CFEA9B38A9 /* Pods-MasterFindrHome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasterFindrHome.release.xcconfig"; path = "Pods/Target Support Files/Pods-MasterFindrHome/Pods-MasterFindrHome.release.xcconfig"; sourceTree = "<group>"; };
+		9904CBDB1B239CEC006B916E /* ItemInfoBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemInfoBundle.swift; path = ../ItemInfoBundle.swift; sourceTree = "<group>"; };
 		BC64BBFC139BB6389AA0B717 /* libPods-MasterFindrHome.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MasterFindrHome.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -92,6 +94,7 @@
 		06A19E6D1B22590400C76D32 /* MasterFindrHome */ = {
 			isa = PBXGroup;
 			children = (
+				9904CBDB1B239CEC006B916E /* ItemInfoBundle.swift */,
 				06A19E721B22590400C76D32 /* ViewController.swift */,
 				06BFC9681B22866A00021BEC /* GoogleMapsViewController.swift */,
 				06EF166D1B2360D400826B23 /* LoginVC.swift */,
@@ -284,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9904CBDC1B239CEC006B916E /* ItemInfoBundle.swift in Sources */,
 				06A19E731B22590400C76D32 /* ViewController.swift in Sources */,
 				06A19E711B22590400C76D32 /* AppDelegate.swift in Sources */,
 				06EF16771B2363BA00826B23 /* KeychainWrapper.m in Sources */,

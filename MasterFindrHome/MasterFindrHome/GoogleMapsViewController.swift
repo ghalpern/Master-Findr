@@ -36,7 +36,7 @@ class GoogleMapsViewController: UIViewController {
         
         if sender.state == UIGestureRecognizerState.Began {
             let coordinate = mapView.convertPoint(sender.locationInView(mapView), toCoordinateFromView: mapView)
-            println("\(coordinate.latitude, coordinate.longitude)")
+            println("Coordinates: \(coordinate.latitude, coordinate.longitude)")
        }
     }
     

@@ -93,7 +93,7 @@
                     </connections>
                 </pongPressGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2048" y="346"/>
+            <point key="canvasLocation" x="2112" y="316"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Ehc-gn-BMC">

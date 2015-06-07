@@ -135,7 +135,11 @@
                     </connections>
                 </pongPressGestureRecognizer>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="1394" y="310"/>
+=======
+            <point key="canvasLocation" x="2112" y="316"/>
+>>>>>>> 1749f123a5f14dc88c234b895fdda6e0b4c5c93f
         </scene>
         <!--LoginVC-->
         <scene sceneID="Ehc-gn-BMC">
